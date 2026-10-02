@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090d12" />
+    <meta name="description" content="SheetDelver is an open source companion interface for Foundry VTT. Explore the systems, the project, and how to get started." />
+    <title>SheetDelver — Another view of your world</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script>try{document.documentElement.dataset.theme=localStorage.getItem('sheetdelver-theme')==='light'?'light':'dark'}catch{document.documentElement.dataset.theme='dark'}</script>
+    <link rel="stylesheet" href="editorial.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header wrap" id="top">
+        <a class="wordmark" href="#top" aria-label="SheetDelver home"><span class="wordmark-icon" aria-hidden="true">S<span>D</span></span><span>SheetDelver<span class="wordmark-dot">.</span></span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#story">The idea</a>
+          <a href="#systems">Systems</a>
+          <a href="#getting-started">Getting started</a>
+          <a href="#open-source">Open source</a>
+        </nav>
+        <div class="header-tools">
+          <div class="theme-switch" role="group" aria-label="Color theme">
+            <button type="button" data-theme-choice="dark" aria-pressed="true"><span aria-hidden="true">☾</span> Dark</button>
+            <button type="button" data-theme-choice="light" aria-pressed="false"><span aria-hidden="true">☼</span> Light</button>
+          </div>
+          <a class="header-action" href="https://github.com/sheetdelver/sheetdelver" aria-label="SheetDelver on GitHub">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="hero wrap" aria-labelledby="hero-title">
+          <div class="hero-head">
+            <div class="hero-title-block">
+              <p class="eyebrow"><span class="eyebrow-mark"></span> OPEN SOURCE / FOUNDRY VTT COMPANION</p>
+              <h1 id="hero-title">Another view<br />of <span>your world.</span></h1>
+            </div>
+            <div class="hero-side">
+              <p>Character sheets outside Foundry VTT, with chat, dice, and shared journals close when you need them.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#getting-started">Get started <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/sheetdelver/sheetdelver">Explore the source <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="hero-compatibility">WORKS WITH FOUNDRY VTT 13 &amp; 14</p>
+            </div>
+          </div>
+          <div class="hero-stage">
+            <div class="stage-top"><span>PRODUCT VIEW / 01</span><span>THE PLAYER DASHBOARD</span><span class="stage-top-line"></span><span>↘</span></div>
+            <div class="stage-image-wrap"><img src="assets/dashboard.png" alt="SheetDelver dashboard with characters and game tools" width="1276" height="885" fetchpriority="high" /></div>
+            <div class="stage-bottom"><span>A place to start every session.</span><span>CHARACTERS / SHEETS / SYSTEMS</span></div>
+          </div>
+        </section>
+
+        <section class="stats-band" id="open-source" aria-labelledby="stats-title">
+          <div class="wrap stats-inner">
+            <div class="stats-heading"><p class="eyebrow">LIVE FROM GITHUB</p><h2 id="stats-title">Built in public.</h2><a href="https://github.com/sheetdelver">See the organization <span aria-hidden="true">↗</span></a></div>
+            <div class="stats-list" aria-live="polite">
+              <div class="stat"><span class="stat-value" id="stat-repos">—</span><span class="stat-label">PUBLIC REPOSITORIES</span></div>
+              <div class="stat"><span class="stat-value" id="stat-stars">—</span><span class="stat-label">STARS ACROSS REPOS</span></div>
+              <div class="stat"><span class="stat-value stat-date" id="stat-updated">—</span><span class="stat-label">LATEST REPO PUSH</span></div>
+              <p class="stats-source" id="stats-source">Loading public GitHub data…</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="story wrap section-pad" id="story" aria-labelledby="story-title">
+          <div class="section-lead"><p class="eyebrow">01 / THE IDEA</p><h2 id="story-title">Keep the world.<br /><span>Lose the clutter.</span></h2><p>SheetDelver gives players a clear place to follow the action while Foundry remains the home of the world. Each game system can make its character sheet feel like its own game.</p></div>
+          <div class="feature-list">
+            <article class="feature-row"><span class="feature-index">01</span><h3>Character sheets</h3><p>System designed views for your characters, from a desktop to a smaller screen.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
+            <article class="feature-row"><span class="feature-index">02</span><h3>Shared moments</h3><p>Images and journals shared by the GM, with a rich browser for the details.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
+            <article class="feature-row"><span class="feature-index">03</span><h3>Play in motion</h3><p>Chat, dice, and combat context close to the sheet when the game picks up.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
+          </div>
+        </section>
+
+        <section class="systems-section section-pad" id="systems" aria-labelledby="systems-title">
+          <div class="wrap">
+            <div class="systems-head"><div><p class="eyebrow">02 / SYSTEMS</p><h2 id="systems-title">Different games.<br /><span>Distinctive sheets.</span></h2></div><p>System modules shape the sheet for each game, with their own rules and visual language.</p></div>
+            <div class="system-showcase">
+              <article class="system-feature system-shadowdark">
+                <div class="system-visual"><img src="assets/shadowdark-sheet.png" alt="Shadowdark character sheet in SheetDelver" width="997" height="825" loading="lazy" /></div>
+                <div class="system-copy"><span class="system-kicker">01 / SYSTEM MODULE</span><h3>Shadowdark<br />RPG</h3><p>A dedicated sheet for delving into the dark.</p><a href="https://github.com/sheetdelver/sd-shadowdark">Explore module <span aria-hidden="true">↗</span></a></div>
+              </article>
+              <article class="system-feature system-morkborg">
+                <div class="system-copy"><span class="system-kicker">02 / SYSTEM MODULE</span><h3>Mörk<br />Borg</h3><p>A loud, unmistakable view for a world at its end.</p><a href="https://github.com/sheetdelver/sd-morkborg">Explore module <span aria-hidden="true">↗</span></a></div>
+                <div class="system-visual"><img src="assets/morkborg-sheet.png" alt="Mörk Borg character sheet in SheetDelver" width="838" height="1241" loading="lazy" /></div>
+              </article>
+              <a class="system-experimental" href="https://github.com/sheetdelver/sd-dnd5e"><span class="system-kicker">03 / EXPERIMENTAL MODULE</span><strong>D&amp;D 5e</strong><span>Early support is in active development.</span><span class="experimental-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="getting-started wrap section-pad" id="getting-started" aria-labelledby="getting-started-title">
+          <div class="getting-intro"><p class="eyebrow">03 / GETTING STARTED</p><h2 id="getting-started-title">Run it<br /><span>your way.</span></h2><p>There is no one-line installer yet. The repository includes a setup wizard and a documented manual path.</p><div class="prerequisites"><span>BEFORE YOU BEGIN</span><p>Node.js 22.12+ · Foundry VTT 13 or 14 · access to a Foundry world</p></div></div>
+          <div class="steps">
+            <article class="step"><span class="step-number">01</span><div><h3>Get the source</h3><p>Clone the project and install its dependencies.</p><code>git clone https://github.com/sheetdelver/sheetdelver.git</code><code>cd sheetdelver &amp;&amp; npm install</code></div></article>
+            <article class="step"><span class="step-number">02</span><div><h3>Configure your connection</h3><p>Run the setup wizard, then provide the Foundry service account values through environment variables or an owner-only <code class="inline-code">.env</code> file.</p><code>npm run setup</code></div></article>
+            <article class="step"><span class="step-number">03</span><div><h3>Start SheetDelver</h3><p>Launch the development server and open the player URL printed at startup.</p><code>npm run dev</code></div></article>
+            <div class="steps-footer"><a href="https://github.com/sheetdelver/sheetdelver#running-locally">Read the full setup guide <span aria-hidden="true">↗</span></a><a href="https://github.com/sheetdelver/sheetdelver/blob/main/docs/CONFIGURATION.md">Configuration reference <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </section>
+
+        <section class="closing"><div class="wrap closing-inner"><p class="eyebrow">OPEN SOURCE / OPEN WORLD</p><h2>See what we<br /><span>build next.</span></h2><p>Explore the code, follow the modules, or help move SheetDelver forward.</p><div class="closing-links"><a class="button button-primary" href="https://github.com/sheetdelver/sheetdelver">Project repository <span aria-hidden="true">↗</span></a><a href="https://github.com/sheetdelver/sheetdelver/blob/main/docs/CONTRIBUTING.md">Contribute <span aria-hidden="true">↗</span></a></div></div></section>
+      </main>
+
+      <footer class="site-footer wrap"><a class="wordmark" href="#top"><span class="wordmark-icon" aria-hidden="true">S<span>D</span></span><span>SheetDelver<span class="wordmark-dot">.</span></span></a><span>Another view of your world.</span><a href="concept-cards.html">Compare the card layout <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </body>
+</html>

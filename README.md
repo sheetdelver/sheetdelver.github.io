@@ -1,0 +1,45 @@
+# SheetDelver website concept
+
+Standalone static website prototype for the SheetDelver project. It is kept in
+`temp/web` until the team chooses a permanent repository and host. No root app
+configuration or production Foundry connection is involved. `index.html` is the
+editorial layout; `concept-cards.html` preserves the earlier card layout for
+comparison.
+
+## Preview
+
+From this directory, run `python3 -m http.server 8765 --bind 127.0.0.1` and open
+<http://127.0.0.1:8765/>. Any static file server works. The page has no build
+step or npm dependencies.
+
+The site has a manual Getting Started section based on the root README:
+clone/install, run the setup wizard, supply Foundry connection values, and run
+the development server. It links to the full setup and configuration guides.
+
+## GitHub numbers
+
+The browser requests public data from GitHub's organization and organization
+repository REST endpoints. It shows the organization's public repository count,
+the sum of stars on public organization repositories, and the latest repository
+push date in UTC. If GitHub is unavailable or the unauthenticated API limit is
+reached, the values remain blank and the page links to the organization.
+
+For a public launch, generating a cached `stats.json` during deployment would
+make the numbers more reliable and avoid spending each visitor's unauthenticated
+API allowance. The page needs no GitHub token in the browser.
+
+## Content and assets
+
+The copy follows the current root README and architecture docs. The dashboard,
+Shadowdark sheet, and Mörk Borg sheet are copies of existing project assets.
+D&D 5e is labeled experimental; the page does not imply that planned systems
+are available. Both layouts default to dark and share a persistent light/dark
+switch in the header.
+
+The only images in the prototype are actual SheetDelver screenshots. Decorative
+illustrations were removed. If the site later needs third-party imagery, use
+Creative Commons licensed material with the required attribution.
+
+The site uses relative paths and can be moved to a static host, including
+GitHub Pages. Before publishing, confirm the final URL, preferred copy,
+screenshot recency, and whether to use a scheduled stats snapshot.
