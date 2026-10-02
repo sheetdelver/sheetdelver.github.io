@@ -1,9 +1,9 @@
 # SheetDelver website
 
 Standalone static website for the SheetDelver project, maintained in
-`sheetdelver/web`. No SheetDelver application server or Foundry connection is
-involved. `index.html` is the main layout; `concept-cards.html` preserves the
-earlier card layout for comparison.
+`sheetdelver/sheetdelver.github.io`. No SheetDelver application server or
+Foundry connection is involved. `index.html` is the main layout;
+`concept-cards.html` preserves the earlier card layout for comparison.
 
 ## Preview
 
@@ -42,8 +42,7 @@ The only images in the prototype are actual SheetDelver screenshots. Decorative
 illustrations were removed. If the site later needs third-party imagery, use
 Creative Commons licensed material with the required attribution.
 
-The site uses relative paths and can be served from a project path or custom
-domain. To publish with GitHub Pages, select the repository's `main` branch and
-root folder in **Settings → Pages**. The default project URL would be
-`https://sheetdelver.github.io/web/`. Before publishing, confirm the preferred
-copy, screenshot recency, and whether to use a scheduled stats snapshot.
+The site uses relative paths. GitHub Pages publishes the repository's `main`
+branch and root folder at <https://sheetdelver.github.io/>. Review the copy,
+screenshots, and whether to use a scheduled stats snapshot before promoting
+the site widely.
