@@ -36,7 +36,7 @@ async function loadStats() {
     if (!Number.isFinite(repoCount)) throw new Error('Missing repository count');
 
     // Public repository lists are paginated at 100. Fetch every page so the
-    // star total and latest push never silently omit repositories.
+    // latest push (and the comparison page's star total) uses every repo.
     const repos = [];
     for (let page = 1; page <= Math.ceil(repoCount / 100); page += 1) {
       const batch = await getJson(`${apiBase}/repos?type=public&per_page=100&page=${page}`);
@@ -48,7 +48,8 @@ async function loadStats() {
     const stars = repos.reduce((total, repo) => total + (Number(repo.stargazers_count) || 0), 0);
     const latestPush = repos.map((repo) => repo.pushed_at).filter(Boolean).sort().at(-1);
     document.querySelector('#stat-repos').textContent = numberFormat.format(repoCount);
-    document.querySelector('#stat-stars').textContent = numberFormat.format(stars);
+    const starStat = document.querySelector('#stat-stars');
+    if (starStat) starStat.textContent = numberFormat.format(stars);
     document.querySelector('#stat-updated').textContent = latestPush
       ? new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(latestPush))
       : '—';

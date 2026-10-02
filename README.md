@@ -19,10 +19,11 @@ the development server. It links to the full setup and configuration guides.
 ## GitHub numbers
 
 The browser requests public data from GitHub's organization and organization
-repository REST endpoints. It shows the organization's public repository count,
-the sum of stars on public organization repositories, and the latest repository
-push date in UTC. If GitHub is unavailable or the unauthenticated API limit is
-reached, the values remain blank and the page links to the organization.
+repository REST endpoints. The main layout shows the public repository count
+and latest repository push date in UTC, below the setup section. The comparison
+layout also shows the sum of stars on public organization repositories. If
+GitHub is unavailable or the unauthenticated API limit is reached, the values
+remain blank and the page links to the organization.
 
 For a public launch, generating a cached `stats.json` during deployment would
 make the numbers more reliable and avoid spending each visitor's unauthenticated

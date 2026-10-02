@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#090d12" />
-    <meta name="description" content="SheetDelver is an open source companion interface for Foundry VTT. Explore the systems, the project, and how to get started." />
-    <title>SheetDelver — Another view of your world</title>
+    <meta name="description" content="SheetDelver gives players character sheets outside Foundry VTT, with chat, dice, and shared journals nearby." />
+    <title>SheetDelver — Character sheets outside Foundry VTT</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
           <a href="#story">The idea</a>
           <a href="#systems">Systems</a>
           <a href="#getting-started">Getting started</a>
-          <a href="#open-source">Open source</a>
+          <a href="https://github.com/sheetdelver/sheetdelver#running-locally">Docs <span aria-hidden="true">↗</span></a>
         </nav>
         <div class="header-tools">
           <div class="theme-switch" role="group" aria-label="Color theme">
@@ -39,13 +39,13 @@
           <div class="hero-head">
             <div class="hero-title-block">
               <p class="eyebrow"><span class="eyebrow-mark"></span> OPEN SOURCE / FOUNDRY VTT COMPANION</p>
-              <h1 id="hero-title">Another view<br />of <span>your world.</span></h1>
+              <h1 id="hero-title">Character sheets<br /><span>outside Foundry.</span></h1>
             </div>
             <div class="hero-side">
-              <p>Character sheets outside Foundry VTT, with chat, dice, and shared journals close when you need them.</p>
+              <p>SheetDelver puts your Foundry VTT character sheets in a separate browser view. Chat, dice, and shared journals are there when you need them.</p>
               <div class="hero-actions">
-                <a class="button button-primary" href="#getting-started">Get started <span aria-hidden="true">↗</span></a>
-                <a class="text-link" href="https://github.com/sheetdelver/sheetdelver">Explore the source <span aria-hidden="true">↗</span></a>
+                <a class="button button-primary" href="#getting-started">Manual setup <span aria-hidden="true">↓</span></a>
+                <a class="text-link" href="#systems">See the sheets <span aria-hidden="true">↓</span></a>
               </div>
               <p class="hero-compatibility">WORKS WITH FOUNDRY VTT 13 &amp; 14</p>
             </div>
@@ -57,20 +57,8 @@
           </div>
         </section>
 
-        <section class="stats-band" id="open-source" aria-labelledby="stats-title">
-          <div class="wrap stats-inner">
-            <div class="stats-heading"><p class="eyebrow">LIVE FROM GITHUB</p><h2 id="stats-title">Built in public.</h2><a href="https://github.com/sheetdelver">See the organization <span aria-hidden="true">↗</span></a></div>
-            <div class="stats-list" aria-live="polite">
-              <div class="stat"><span class="stat-value" id="stat-repos">—</span><span class="stat-label">PUBLIC REPOSITORIES</span></div>
-              <div class="stat"><span class="stat-value" id="stat-stars">—</span><span class="stat-label">STARS ACROSS REPOS</span></div>
-              <div class="stat"><span class="stat-value stat-date" id="stat-updated">—</span><span class="stat-label">LATEST REPO PUSH</span></div>
-              <p class="stats-source" id="stats-source">Loading public GitHub data…</p>
-            </div>
-          </div>
-        </section>
-
         <section class="story wrap section-pad" id="story" aria-labelledby="story-title">
-          <div class="section-lead"><p class="eyebrow">01 / THE IDEA</p><h2 id="story-title">Keep the world.<br /><span>Lose the clutter.</span></h2><p>SheetDelver gives players a clear place to follow the action while Foundry remains the home of the world. Each game system can make its character sheet feel like its own game.</p></div>
+          <div class="section-lead"><p class="eyebrow">01 / THE IDEA</p><h2 id="story-title">Character sheets<br /><span>come first.</span></h2><p>Players use their sheets in a separate browser view while Foundry remains the home of the world. System modules decide how each sheet looks and behaves.</p></div>
           <div class="feature-list">
             <article class="feature-row"><span class="feature-index">01</span><h3>Character sheets</h3><p>System designed views for your characters, from a desktop to a smaller screen.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
             <article class="feature-row"><span class="feature-index">02</span><h3>Shared moments</h3><p>Images and journals shared by the GM, with a rich browser for the details.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
@@ -96,7 +84,7 @@
         </section>
 
         <section class="getting-started wrap section-pad" id="getting-started" aria-labelledby="getting-started-title">
-          <div class="getting-intro"><p class="eyebrow">03 / GETTING STARTED</p><h2 id="getting-started-title">Run it<br /><span>your way.</span></h2><p>There is no one-line installer yet. The repository includes a setup wizard and a documented manual path.</p><div class="prerequisites"><span>BEFORE YOU BEGIN</span><p>Node.js 22.12+ · Foundry VTT 13 or 14 · access to a Foundry world</p></div></div>
+          <div class="getting-intro"><p class="eyebrow">03 / GETTING STARTED</p><h2 id="getting-started-title">Set it up<br /><span>locally.</span></h2><p>For now, use the repository's setup wizard and manual instructions.</p><div class="prerequisites"><span>BEFORE YOU BEGIN</span><p>Node.js 22.12+ · Foundry VTT 13 or 14 · access to a Foundry world</p></div></div>
           <div class="steps">
             <article class="step"><span class="step-number">01</span><div><h3>Get the source</h3><p>Clone the project and install its dependencies.</p><code>git clone https://github.com/sheetdelver/sheetdelver.git</code><code>cd sheetdelver &amp;&amp; npm install</code></div></article>
             <article class="step"><span class="step-number">02</span><div><h3>Configure your connection</h3><p>Run the setup wizard, then provide the Foundry service account values through environment variables or an owner-only <code class="inline-code">.env</code> file.</p><code>npm run setup</code></div></article>
@@ -105,10 +93,21 @@
           </div>
         </section>
 
+        <section class="stats-band" id="open-source" aria-labelledby="stats-title">
+          <div class="wrap stats-inner">
+            <div class="stats-heading"><p class="eyebrow">FROM GITHUB</p><h2 id="stats-title">Project activity.</h2><a href="https://github.com/sheetdelver">See the organization <span aria-hidden="true">↗</span></a></div>
+            <div class="stats-list" aria-live="polite">
+              <div class="stat"><span class="stat-value" id="stat-repos">—</span><span class="stat-label">PUBLIC REPOSITORIES</span></div>
+              <div class="stat"><span class="stat-value stat-date" id="stat-updated">—</span><span class="stat-label">LATEST REPO PUSH</span></div>
+              <p class="stats-source" id="stats-source">Loading public GitHub data…</p>
+            </div>
+          </div>
+        </section>
+
         <section class="closing"><div class="wrap closing-inner"><p class="eyebrow">OPEN SOURCE / OPEN WORLD</p><h2>See what we<br /><span>build next.</span></h2><p>Explore the code, follow the modules, or help move SheetDelver forward.</p><div class="closing-links"><a class="button button-primary" href="https://github.com/sheetdelver/sheetdelver">Project repository <span aria-hidden="true">↗</span></a><a href="https://github.com/sheetdelver/sheetdelver/blob/main/docs/CONTRIBUTING.md">Contribute <span aria-hidden="true">↗</span></a></div></div></section>
       </main>
 
-      <footer class="site-footer wrap"><a class="wordmark" href="#top"><span class="wordmark-icon" aria-hidden="true">S<span>D</span></span><span>SheetDelver<span class="wordmark-dot">.</span></span></a><span>Another view of your world.</span><a href="concept-cards.html">Compare the card layout <span aria-hidden="true">↗</span></a></footer>
+      <footer class="site-footer wrap"><a class="wordmark" href="#top"><span class="wordmark-icon" aria-hidden="true">S<span>D</span></span><span>SheetDelver<span class="wordmark-dot">.</span></span></a><span>Character sheets outside Foundry VTT.</span><a href="concept-cards.html">Compare the card layout <span aria-hidden="true">↗</span></a></footer>
     </div>
   </body>
 </html>
