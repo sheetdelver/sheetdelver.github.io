@@ -146,6 +146,15 @@
 .system-experimental>span:nth-child(3) { color: var(--muted); font-size: 12px; }
 .experimental-arrow { color: var(--accent); font-size: 25px; }
 
+.faq { display: grid; grid-template-columns: .75fr 1.25fr; gap: 10%; }
+.faq-intro h2 { margin: 0; font: 600 clamp(57px, 5.4vw, 86px)/.98 "Space Grotesk", sans-serif; letter-spacing: -.075em; }
+.faq-intro h2 span { color: var(--accent); }
+.faq-intro>p:last-child { max-width: 330px; margin: 25px 0 0; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.faq-list { border-top: 1px solid var(--line); }
+.faq-item { display: grid; grid-template-columns: minmax(150px, .75fr) minmax(180px, 1fr); gap: 24px; padding: 27px 0 31px; border-bottom: 1px solid var(--line); }
+.faq-item h3 { margin: 0; font: 600 20px/1.25 "Space Grotesk", sans-serif; letter-spacing: -.035em; }
+.faq-item p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+
 .getting-started { display: grid; grid-template-columns: .75fr 1.25fr; gap: 10%; }
 .getting-intro { align-self: start; }
 .getting-intro>p:nth-of-type(2) { max-width: 330px; margin: 25px 0 35px; color: var(--muted); font-size: 14px; line-height: 1.8; }
@@ -186,7 +195,7 @@
   .hero-side { max-width: 620px; }
   .hero-side>p:first-child { max-width: 570px; }
   .hero-compatibility { margin-top: 24px; }
-  .stats-inner, .story, .getting-started { grid-template-columns: 1fr; gap: 45px; }
+  .stats-inner, .story, .faq, .getting-started { grid-template-columns: 1fr; gap: 45px; }
   .systems-head { display: block; }
   .systems-head>p { margin-top: 25px; }
   .section-lead>p:last-child { max-width: 600px; }
@@ -207,7 +216,8 @@
   .stats-list .stat-value { font-size: 43px; }
   .stats-list .stat-date { font-size: 23px; }
   .stats-list .stats-source { margin-left: 14px; }
-  .section-lead h2, .systems-head h2, .getting-intro h2 { font-size: 48px; }
+  .section-lead h2, .systems-head h2, .faq-intro h2, .getting-intro h2 { font-size: 48px; }
+  .faq-item { grid-template-columns: 1fr; gap: 10px; padding-block: 22px; }
   .feature-row { grid-template-columns: 28px 1fr 20px; gap: 10px; padding-block: 22px; }
   .feature-row p { grid-column: 2; }
   .feature-glyph { grid-column: 3; grid-row: 1; }

@@ -12,7 +12,9 @@ From this directory, run `python3 -m http.server 8765 --bind 127.0.0.1` and open
 <http://127.0.0.1:8765/>. Any static file server works. The page has no build
 step or npm dependencies.
 
-The site has a manual Getting Started section based on the root README:
+The main page frames SheetDelver around in-person play and includes a short FAQ
+about player devices, Foundry setup, and the tools beside each sheet. It also
+has a manual Getting Started section based on the root README:
 clone/install, run the setup wizard, supply Foundry connection values, and run
 the development server. It links to the full setup and configuration guides.
 
