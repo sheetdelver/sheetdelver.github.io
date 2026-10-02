@@ -91,8 +91,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .announcement a:hover { text-decoration: underline; }
 .site-header { display: flex; min-height: 86px; align-items: center; justify-content: space-between; gap: 25px; border-bottom: 1px solid var(--line); }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; white-space: nowrap; font: 700 24px/1 "Space Grotesk", sans-serif; letter-spacing: -.055em; }
-.wordmark-icon { display: grid; width: 34px; height: 34px; place-content: center; border: 1px solid var(--accent); border-radius: 8px; color: var(--accent); font: 700 14px/1 "Space Grotesk", sans-serif; letter-spacing: -.13em; }
-.wordmark-icon span, .wordmark-dot { color: var(--accent); }
+.wordmark-icon { display: inline-flex; width: 34px; height: 34px; align-items: center; justify-content: center; border: 1px solid var(--accent); border-radius: 8px; color: var(--accent); font: 700 13px/1 Inter, sans-serif; letter-spacing: -.06em; }
+.wordmark-icon span { color: var(--accent); }
 .main-nav { display: flex; gap: 30px; color: var(--muted); font-size: 12px; font-weight: 600; }
 .main-nav a:hover, .site-footer>a:last-child:hover { color: var(--accent); }
 .header-tools { display: flex; align-items: center; gap: 14px; }

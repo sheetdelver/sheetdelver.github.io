@@ -2,6 +2,12 @@ const organization = 'sheetdelver';
 const apiBase = `https://api.github.com/orgs/${organization}`;
 const source = document.querySelector('#stats-source');
 const numberFormat = new Intl.NumberFormat('en-US');
+const releaseRepos = [
+  { id: 'core', name: 'sheetdelver' },
+  { id: 'shadowdark', name: 'sd-shadowdark' },
+  { id: 'morkborg', name: 'sd-morkborg' },
+  { id: 'dnd5e', name: 'sd-dnd5e' },
+];
 
 const themeButtons = document.querySelectorAll('[data-theme-choice]');
 function setTheme(theme) {
@@ -30,33 +36,37 @@ async function getJson(url) {
 }
 
 async function loadStats() {
-  try {
-    const org = await getJson(apiBase);
-    const repoCount = Number(org.public_repos);
-    if (!Number.isFinite(repoCount)) throw new Error('Missing repository count');
+  const [orgResult, ...releaseResults] = await Promise.allSettled([
+    getJson(apiBase),
+    ...releaseRepos.map(({ name }) => getJson(`https://api.github.com/repos/${organization}/${name}/releases/latest`)),
+  ]);
 
-    // Public repository lists are paginated at 100. Fetch every page so the
-    // latest push (and the comparison page's star total) uses every repo.
-    const repos = [];
-    for (let page = 1; page <= Math.ceil(repoCount / 100); page += 1) {
-      const batch = await getJson(`${apiBase}/repos?type=public&per_page=100&page=${page}`);
-      if (!Array.isArray(batch)) throw new Error('Invalid repository list');
-      repos.push(...batch);
+  let loadedReleases = 0;
+  releaseResults.forEach((result, index) => {
+    if (result.status !== 'fulfilled' || typeof result.value.tag_name !== 'string') return;
+    const { id, name } = releaseRepos[index];
+    const release = result.value;
+    const link = document.querySelector(`#release-${id}`);
+    link.querySelector('[data-release-version]').textContent = release.tag_name;
+    link.href = `https://github.com/${organization}/${name}/releases/tag/${encodeURIComponent(release.tag_name)}`;
+    const published = release.published_at && new Date(release.published_at);
+    if (published && !Number.isNaN(published.valueOf())) {
+      const date = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(published);
+      link.querySelector('[data-release-date]').textContent = `Released ${date} ↗`;
     }
-    if (repos.length < repoCount) throw new Error('Incomplete repository list');
+    loadedReleases += 1;
+  });
 
-    const stars = repos.reduce((total, repo) => total + (Number(repo.stargazers_count) || 0), 0);
-    const latestPush = repos.map((repo) => repo.pushed_at).filter(Boolean).sort().at(-1);
+  const repoCount = orgResult.status === 'fulfilled' ? Number(orgResult.value.public_repos) : NaN;
+  if (Number.isFinite(repoCount)) {
     document.querySelector('#stat-repos').textContent = numberFormat.format(repoCount);
-    const starStat = document.querySelector('#stat-stars');
-    if (starStat) starStat.textContent = numberFormat.format(stars);
-    document.querySelector('#stat-updated').textContent = latestPush
-      ? new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(latestPush))
-      : '—';
-    source.textContent = 'Public GitHub data · refreshed when you open this page';
-  } catch {
-    source.innerHTML = 'GitHub data is temporarily unavailable. <a href="https://github.com/sheetdelver">View the organization ↗</a>';
   }
+  if (loadedReleases === 0 && !Number.isFinite(repoCount)) {
+    source.innerHTML = 'GitHub data is temporarily unavailable. <a href="https://github.com/sheetdelver">View the organization ↗</a>';
+    return;
+  }
+  const partial = loadedReleases < releaseRepos.length ? ' · Some releases unavailable' : '';
+  source.textContent = `Published releases from GitHub${partial}`;
 }
 
 loadStats();
