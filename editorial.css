@@ -182,8 +182,8 @@
 .closing h2 span { color: var(--accent); }
 .closing-inner>p:not(.eyebrow) { margin: 23px 0 27px; }
 .closing-links { position: relative; z-index: 1; display: flex; align-items: center; gap: 28px; }
-.closing-links>a:last-child { font-size: 12px; font-weight: 700; }
-.closing-links>a:last-child:hover { color: var(--accent); }
+.closing-links>a:not(.button) { font-size: 12px; font-weight: 700; }
+.closing-links>a:not(.button):hover { color: var(--accent); }
 
 @media (max-width: 1170px) {
   .main-nav { gap: 14px; }
