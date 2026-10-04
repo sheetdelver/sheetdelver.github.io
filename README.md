@@ -2,5 +2,5 @@
 
 The web pages for SheetDelver.
 
-- Website: [sheetdelver.github.io](https://sheetdelver.github.io/)
+- Website: [sheetdelver.com](https://sheetdelver.com/)
 - Application and setup: [sheetdelver/sheetdelver](https://github.com/sheetdelver/sheetdelver)
