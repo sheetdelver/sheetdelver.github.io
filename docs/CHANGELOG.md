@@ -18,3 +18,6 @@
 - Paired desktop and phone views
 - Added Creative Commons placeholders
 - Added image credits
+- Added hosting and world FAQs
+- Noted production start command
+- Cached GitHub release data

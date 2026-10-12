@@ -167,6 +167,8 @@
             <details class="faq-item"><summary><span class="faq-question">Do players need plugins or add-ons?</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>Players open SheetDelver in a browser on their own device. The host sets up its connection to Foundry; players do not need to manage Foundry plugins or add-ons to use this view.</p></details>
             <details class="faq-item"><summary><span class="faq-question">Which devices can players use?</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>The interface is designed for phones, tablets, and PCs. Players need a browser and access to the SheetDelver server.</p></details>
             <details class="faq-item"><summary><span class="faq-question">What comes with the sheets?</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>Chat, a dice roller with optional 3D animations, shared images and journals, and combat context are available in the player view.</p></details>
+            <details class="faq-item"><summary><span class="faq-question">Where does SheetDelver run?</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>On a computer you control that can reach your Foundry server, either the same machine or another one on your network. It runs on Node.js, and players open it from their browsers.</p></details>
+            <details class="faq-item"><summary><span class="faq-question">Do I need to change my Foundry world?</span><span class="faq-toggle" aria-hidden="true"></span></summary><p>No Foundry module is needed. You set up a Foundry user for SheetDelver to connect with, and players sign in with their own Foundry users.</p></details>
           </div>
         </section>
 
@@ -175,8 +177,8 @@
           <div class="steps">
             <article class="step"><span class="step-number">01</span><div><h3>Get the source</h3><p>Clone the project and install its dependencies.</p><code>git clone https://github.com/sheetdelver/sheetdelver.git</code><code>cd sheetdelver &amp;&amp; npm install</code></div></article>
             <article class="step"><span class="step-number">02</span><div><h3>Configure your connection</h3><p>Run the setup wizard, then provide the Foundry service account values through environment variables or an owner-only <code class="inline-code">.env</code> file.</p><code>npm run setup</code></div></article>
-            <article class="step"><span class="step-number">03</span><div><h3>Start SheetDelver</h3><p>Launch the development server. It prints separate local admin and player URLs.</p><code>npm run dev</code></div></article>
-            <article class="step"><span class="step-number">04</span><div><h3>Create your admin account</h3><p>Open the local admin URL and use the one-time credential from setup to create your account. Then open the player URL when you're ready.</p></div></article>
+            <article class="step"><span class="step-number">03</span><div><h3>Start SheetDelver</h3><p>Start the development server to try it out. It prints separate local admin and player URLs. For regular games, build and run the production server instead.</p><code>npm run dev</code><code>npm run build &amp;&amp; npm start</code></div></article>
+            <article class="step"><span class="step-number">04</span><div><h3>Create your admin account</h3><p>Open the local admin URL and use the one-time credential from setup, valid for 60 minutes, to create your account. Then open the player URL when you're ready.</p></div></article>
             <div class="steps-footer"><a href="https://github.com/sheetdelver/sheetdelver#running-locally">Read the full setup guide <span aria-hidden="true">↗</span></a><a href="https://github.com/sheetdelver/sheetdelver/blob/main/docs/CONFIGURATION.md">Configuration reference <span aria-hidden="true">↗</span></a></div>
           </div>
         </section>

@@ -57,11 +57,40 @@ async function getJson(url) {
   return response.json();
 }
 
-async function loadStats() {
-  const [orgResult, ...releaseResults] = await Promise.allSettled([
+// Cache GitHub responses for the browser session to stay well under the
+// unauthenticated rate limit (60 requests per hour per IP).
+const cacheKey = 'sheetdelver-github-v1';
+const cacheTtl = 15 * 60 * 1000;
+
+function readCache() {
+  try {
+    const cached = JSON.parse(sessionStorage.getItem(cacheKey));
+    if (cached && Date.now() - cached.time < cacheTtl && Array.isArray(cached.results)) return cached.results;
+  } catch { /* Storage may be disabled or hold stale data. */ }
+  return null;
+}
+
+function writeCache(results) {
+  try {
+    sessionStorage.setItem(cacheKey, JSON.stringify({ time: Date.now(), results }));
+  } catch { /* Storage may be disabled. */ }
+}
+
+async function fetchStats() {
+  const cached = readCache();
+  if (cached) return cached;
+  const settled = await Promise.allSettled([
     getJson(apiBase),
     ...releaseRepos.map(({ name }) => getJson(`https://api.github.com/repos/${organization}/${name}/releases/latest`)),
   ]);
+  const results = settled.map((result) => (result.status === 'fulfilled' ? { status: 'fulfilled', value: result.value } : { status: 'rejected' }));
+  // Only cache complete data so partial failures retry on the next view.
+  if (results.every((result) => result.status === 'fulfilled')) writeCache(results);
+  return results;
+}
+
+async function loadStats() {
+  const [orgResult, ...releaseResults] = await fetchStats();
 
   let loadedReleases = 0;
   releaseResults.forEach((result, index) => {
