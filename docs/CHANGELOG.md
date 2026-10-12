@@ -4,3 +4,4 @@
 
 - Added agent working agreement
 - Added site changelog
+- Consolidated site stylesheet
