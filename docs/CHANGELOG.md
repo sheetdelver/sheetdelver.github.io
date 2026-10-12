@@ -21,3 +21,5 @@
 - Added hosting and world FAQs
 - Noted production start command
 - Cached GitHub release data
+- Added structured site data
+- Trimmed unused font weights

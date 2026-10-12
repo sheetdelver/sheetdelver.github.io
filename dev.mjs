@@ -13,8 +13,12 @@ const contentTypes = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json; charset=utf-8',
+  '.avif': 'image/avif',
+  '.jpg': 'image/jpeg',
+  '.md': 'text/markdown; charset=utf-8',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
+  '.webp': 'image/webp',
 };
 
 if (!Number.isInteger(port) || port < 1 || port > 65535) {
@@ -22,9 +26,9 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 }
 
 let reloadTimer;
-for (const directory of [root, join(root, 'assets')]) {
+for (const directory of [root, join(root, 'assets'), join(root, 'assets', 'placeholders')]) {
   watch(directory, (_event, filename) => {
-    if (!filename || !/\.(html|css|js|png|svg)$/i.test(filename)) return;
+    if (!filename || !/\.(html|css|js|png|svg|jpg|webp|avif)$/i.test(filename)) return;
     clearTimeout(reloadTimer);
     reloadTimer = setTimeout(() => {
       for (const client of clients) client.write('event: reload\ndata: changed\n\n');
