@@ -18,6 +18,13 @@ function setTheme(theme) {
   document.querySelector('meta[name="theme-color"]').content = theme === 'light' ? '#f5f8f8' : '#090d12';
 }
 setTheme(document.documentElement.dataset.theme === 'light' ? 'light' : 'dark');
+// Follow the system color scheme until the visitor picks a theme.
+const systemLight = matchMedia('(prefers-color-scheme: light)');
+systemLight.addEventListener('change', (event) => {
+  let stored = null;
+  try { stored = localStorage.getItem('sheetdelver-theme'); } catch { /* Storage may be disabled. */ }
+  if (stored !== 'light' && stored !== 'dark') setTheme(event.matches ? 'light' : 'dark');
+});
 themeButtons.forEach((button) => button.addEventListener('click', () => {
   const theme = button.dataset.themeChoice;
   setTheme(theme);

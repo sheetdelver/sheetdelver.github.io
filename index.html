@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <script>try{document.documentElement.dataset.theme=localStorage.getItem('sheetdelver-theme')==='light'?'light':'dark'}catch{document.documentElement.dataset.theme='dark'}</script>
+    <script>(function(){var t;try{t=localStorage.getItem('sheetdelver-theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=t})()</script>
     <link rel="stylesheet" href="site.css" />
     <script src="script.js" defer></script>
   </head>
@@ -37,8 +37,8 @@
         </nav>
         <div class="header-tools">
           <div class="theme-switch" role="group" aria-label="Color theme">
-            <button type="button" data-theme-choice="dark" aria-pressed="true"><span aria-hidden="true">☾</span> Dark</button>
-            <button type="button" data-theme-choice="light" aria-pressed="false"><span aria-hidden="true">☼</span> Light</button>
+            <button type="button" data-theme-choice="dark" aria-pressed="true"><span aria-hidden="true">☾</span> <span class="theme-label">Dark</span></button>
+            <button type="button" data-theme-choice="light" aria-pressed="false"><span aria-hidden="true">☼</span> <span class="theme-label">Light</span></button>
           </div>
           <a class="header-action" href="https://github.com/sheetdelver/sheetdelver" aria-label="SheetDelver on GitHub">GitHub <span aria-hidden="true">↗</span></a>
         </div>
@@ -70,9 +70,9 @@
         <section class="story wrap section-pad" id="story" aria-labelledby="story-title">
           <div class="section-lead"><p class="eyebrow">01 / THE IDEA</p><h2 id="story-title">Character sheets<br /><span>come first</span></h2><p>The GM keeps the world in Foundry while each player gets a dedicated sheet view. System modules decide how each sheet looks and behaves.</p></div>
           <div class="feature-list">
-            <article class="feature-row"><span class="feature-index">01</span><h3>Character sheets</h3><p>System designed views for your characters on phones, tablets, and desktops.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
-            <article class="feature-row"><span class="feature-index">02</span><h3>Shared moments</h3><p>Images and journals shared by the GM, with a rich browser for the details.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
-            <article class="feature-row"><span class="feature-index">03</span><h3>Play in motion</h3><p>Chat, dice, and combat context close to the sheet when the game picks up.</p><span class="feature-glyph" aria-hidden="true">↗</span></article>
+            <article class="feature-row"><span class="feature-index">01</span><h3>Character sheets</h3><p>System designed views for your characters on phones, tablets, and desktops.</p></article>
+            <article class="feature-row"><span class="feature-index">02</span><h3>Shared moments</h3><p>Images and journals shared by the GM, with a rich browser for the details.</p></article>
+            <article class="feature-row"><span class="feature-index">03</span><h3>Play in motion</h3><p>Chat, dice, and combat context close to the sheet when the game picks up.</p></article>
           </div>
         </section>
 
