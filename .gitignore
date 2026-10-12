@@ -1,0 +1,5 @@
+# Local agent context (handoff, notes, tools); never published.
+.resources/
+
+# Local planning documents; tracked change history lives in docs/.
+planning/
