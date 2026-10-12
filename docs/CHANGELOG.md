@@ -13,3 +13,8 @@
 - Fixed phone releases grid
 - Added compact navigation menu
 - Made FAQ answers collapsible
+- Added "At the table" section
+- Added "For the GM" section
+- Paired desktop and phone views
+- Added Creative Commons placeholders
+- Added image credits
