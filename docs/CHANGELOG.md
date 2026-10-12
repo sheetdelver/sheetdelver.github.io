@@ -11,3 +11,5 @@
 - Followed system color scheme
 - Fixed phone layout overflow
 - Fixed phone releases grid
+- Added compact navigation menu
+- Made FAQ answers collapsible

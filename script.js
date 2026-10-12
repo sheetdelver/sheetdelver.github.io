@@ -31,6 +31,21 @@ themeButtons.forEach((button) => button.addEventListener('click', () => {
   try { localStorage.setItem('sheetdelver-theme', theme); } catch { /* Storage may be disabled. */ }
 }));
 
+// Close the compact menu after navigating or on Escape.
+const navMenu = document.querySelector('.nav-menu');
+if (navMenu) {
+  navMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { navMenu.open = false; }));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navMenu.open) {
+      navMenu.open = false;
+      navMenu.querySelector('summary').focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (navMenu.open && !navMenu.contains(event.target)) navMenu.open = false;
+  });
+}
+
 async function getJson(url) {
   const response = await fetch(url, {
     headers: {
