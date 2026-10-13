@@ -30,4 +30,5 @@
 - Added GM tool screenshots
 - Replaced dashboard background artwork
 - Added Mörk Borg screenshots
+- Added D&D 5e screenshot
 - Described both Shadowdark sheet views

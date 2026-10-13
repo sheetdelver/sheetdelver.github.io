@@ -48,3 +48,16 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 |---|---|---|
 | `s05-morkborg-phone` | S05 | Mörk Borg sheet, phone, first screen |
 | `s06-morkborg-desktop` | S06 | Mörk Borg sheet, desktop, character card and initiative, 16:10 crop |
+
+## Capture set 3 — 2026-10-13 (D&D 5e, experimental)
+
+- SheetDelver Core 0.17.0, D&D 5e module (experimental) from `main`
+- Foundry system dnd5e 6.0.2, Foundry VTT 14.367
+- One level 1 fighter built from SRD 5.1 compendium content (CC BY 4.0)
+  with Foundry's default portrait; the world's premium-module background
+  and the system's licensed hero tokens were not used
+- Chromium headless at device scale factor 2; desktop 1440×960
+
+| File | Slot | Source view |
+|---|---|---|
+| `s14-dnd5e` | S14 | D&D 5e sheet, desktop, 4:3 crop |

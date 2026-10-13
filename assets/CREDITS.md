@@ -21,13 +21,13 @@ Placeholders `s01`, `s03`, `s05` and `s06` are crops of earlier SheetDelver
 screenshots (v0.6.5) and are replaced by current captures.
 
 Replaced on the page by captures in `assets/shots/` (files kept until the
-cleanup checkpoint): `s01`–`s03`, `s05`–`s12`.
+cleanup checkpoint): `s01`–`s03`, `s05`–`s12`, `s14`. No placeholder is shown on the page any more.
 
 ## Artwork inside screenshots
 
 | Screenshot (`assets/shots/`) | Work | Author | License |
 |---|---|---|---|
-| `s01-dashboard-desktop`, `s11-gm-combat` (world background) | [Inferno, Plate 2 (the panther)](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_(the_panther).jpg) | Gustave Doré (1832–1883) | Public domain |
+| `s01-dashboard-desktop`, `s11-gm-combat` (world background; also set as the D&D test world's background) | [Inferno, Plate 2 (the panther)](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_(the_panther).jpg) | Gustave Doré (1832–1883) | Public domain |
 | `s09-shared-image` | [Inferno, Plate 9 (Canto III: Charon)](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_(Canto_III_-_Charon).jpg) | Gustave Doré (1832–1883) | Public domain |
 
 The engravings were trimmed, resized and shown in SheetDelver: Plate 9 as a
