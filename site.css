@@ -205,6 +205,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .system-kicker { color: var(--accent); font: 500 var(--fs-label)/1.4 "DM Mono", monospace; letter-spacing: .08em; text-transform: uppercase; }
 .system-copy h3 { margin: 20px 0 15px; font: 600 clamp(50px, 5vw, 77px)/.95 "Space Grotesk", sans-serif; letter-spacing: -.075em; }
 .system-copy p { max-width: 320px; margin: 0 0 22px; color: var(--muted); font-size: var(--fs-body); line-height: 1.7; }
+.system-copy p a { display: inline-block; color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.system-copy p a:hover { color: var(--accent); }
 .system-copy>a { padding-bottom: 4px; border-bottom: 1px solid var(--accent); color: var(--text); font-size: var(--fs-small); font-weight: 700; }
 .system-copy>a:hover { color: var(--accent); }
 .system-experimental {
