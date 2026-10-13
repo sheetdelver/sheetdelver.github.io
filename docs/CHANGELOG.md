@@ -32,4 +32,5 @@
 - Added Mörk Borg screenshots
 - Credited Scvmbirther in Mörk Borg copy
 - Added D&D 5e screenshot
+- Added social preview card
 - Described both Shadowdark sheet views

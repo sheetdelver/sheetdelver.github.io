@@ -61,3 +61,10 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 | File | Slot | Source view |
 |---|---|---|
 | `s14-dnd5e` | S14 | D&D 5e sheet, desktop, 4:3 crop |
+
+## Social card — 2026-10-13
+
+`assets/og-card.jpg` (1200×630, the `og:image`) composites `s01-dashboard-desktop`
+and `s02-sheet-phone` with the site's wordmark, headline and colour tokens.
+It was laid out in HTML/CSS and rendered with headless Chromium at 2×, then
+downscaled; nothing in it is generated artwork.
