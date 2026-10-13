@@ -22,5 +22,6 @@ cropping, resizing and format conversion.
 | `s04-shadowdark-manage-phone` | S04 | Shadowdark management view, Spells tab, phone |
 | `s07-dice` (`.webm`, `.mp4`, `-poster.webp`) | S07 | 3D dice from the Dice Tray (d20, d8, 2d6), 4 s loop, 800×600 crop at 1× |
 | `s08-chat` | S08 | Game chat over a sheet, desktop, 4:3 crop |
+| `s09-shared-image` | S09 | GM-shared image over a sheet, desktop, 4:3 crop; public-domain Doré engraving (see `assets/CREDITS.md`) |
 
 Each still ships as AVIF, WebP and a progressive JPEG fallback.

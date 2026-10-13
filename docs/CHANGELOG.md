@@ -25,4 +25,5 @@
 - Trimmed unused font weights
 - Added Shadowdark product screenshots
 - Added 3D dice clip
+- Added shared image screenshot
 - Described both Shadowdark sheet views
