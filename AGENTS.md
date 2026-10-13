@@ -66,6 +66,9 @@ a running SheetDelver, its modules or Foundry.
 - Images: optimized web formats with fallbacks, intrinsic `width`/`height`,
   and no crops through headings or stats. Record each capture set's
   provenance (SheetDelver/module versions, date) beside the assets.
+- Motion: stills by default. Short clips only where the user approved them
+  (currently the dice loop): muted, looping WebM/MP4 with a poster still,
+  lazy loaded, and the poster alone under `prefers-reduced-motion`. No GIFs.
 
 ## Image Sourcing
 
