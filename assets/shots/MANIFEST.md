@@ -32,3 +32,19 @@ cropping, resizing and format conversion.
 | `s10-combat` | S10 | Player combat tracker over a sheet during a Foundry combat (Prim's turn, round 1), desktop, 4:3 crop |
 
 Each still ships as AVIF, WebP and a progressive JPEG fallback.
+
+## Capture set 2 — 2026-10-13 (Mörk Borg)
+
+- SheetDelver Core 0.17.0
+- Mörk Borg module 0.8 on the Foundry system morkborg 6.0.1
+- Foundry VTT 14.367
+- One scvm made with the SheetDelver SCVM Factory. The system's class
+  portrait and weapon icon (art used by the system with permission) were
+  replaced with Foundry's core default icons before capturing.
+- Chromium headless at device scale factor 2; desktop 1440×900, phone
+  390×844
+
+| File | Slot | Source view |
+|---|---|---|
+| `s05-morkborg-phone` | S05 | Mörk Borg sheet, phone, first screen |
+| `s06-morkborg-desktop` | S06 | Mörk Borg sheet, desktop, character card and initiative, 16:10 crop |

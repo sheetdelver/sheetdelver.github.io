@@ -29,4 +29,5 @@
 - Added combat tracker screenshot
 - Added GM tool screenshots
 - Replaced dashboard background artwork
+- Added Mörk Borg screenshots
 - Described both Shadowdark sheet views
