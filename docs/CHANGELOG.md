@@ -27,4 +27,6 @@
 - Added 3D dice clip
 - Added shared image screenshot
 - Added combat tracker screenshot
+- Added GM tool screenshots
+- Replaced dashboard background artwork
 - Described both Shadowdark sheet views

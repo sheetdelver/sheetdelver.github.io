@@ -10,7 +10,11 @@ cropping, resizing and format conversion.
 - Shadowdark module 0.9.2 on the Foundry system shadowdark 4.0.6
 - Foundry VTT 14.367
 - World "Beneath the Ashen Keep" with four level 1 characters made with the
-  SheetDelver character generator; default portraits
+  SheetDelver character generator; default portraits. World background set
+  to a public-domain Doré engraving (Inferno, Plate 2) so no system artwork
+  appears; S01 recaptured with it on 2026-10-13
+- Admin captures used a temporary install whose catalog host allowlist
+  included sheetdelver.com (the official catalog redirects there)
 - Chromium headless at device scale factor 2; desktop 1440×900, phone
   390×844; dark app theme
 
@@ -23,6 +27,8 @@ cropping, resizing and format conversion.
 | `s07-dice` (`.webm`, `.mp4`, `-poster.webp`) | S07 | 3D dice from the Dice Tray (d20, d8, 2d6), 4 s loop, 800×600 crop at 1× |
 | `s08-chat` | S08 | Game chat over a sheet, desktop, 4:3 crop |
 | `s09-shared-image` | S09 | GM-shared image over a sheet, desktop, 4:3 crop; public-domain Doré engraving (see `assets/CREDITS.md`) |
+| `s11-gm-combat` | S11 | Combat Manager with a tokenless encounter (7 participants, HP/AC stat display), desktop 16:10 |
+| `s12-gm-modules` | S12 | Admin → Modules → Available with the Shadowdark release review open, dark admin theme, desktop 16:10 |
 | `s10-combat` | S10 | Player combat tracker over a sheet during a Foundry combat (Prim's turn, round 1), desktop, 4:3 crop |
 
 Each still ships as AVIF, WebP and a progressive JPEG fallback.

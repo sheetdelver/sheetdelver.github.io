@@ -21,13 +21,15 @@ Placeholders `s01`, `s03`, `s05` and `s06` are crops of earlier SheetDelver
 screenshots (v0.6.5) and are replaced by current captures.
 
 Replaced on the page by captures in `assets/shots/` (files kept until the
-cleanup checkpoint): `s01`, `s02`, `s03`, `s07`, `s08`, `s09`, `s10`.
+cleanup checkpoint): `s01`, `s02`, `s03`, `s07`, `s08`, `s09`, `s10`, `s11`, `s12`.
 
 ## Artwork inside screenshots
 
 | Screenshot (`assets/shots/`) | Work | Author | License |
 |---|---|---|---|
+| `s01-dashboard-desktop`, `s11-gm-combat` (world background) | [Inferno, Plate 2 (the panther)](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_2_(the_panther).jpg) | Gustave Doré (1832–1883) | Public domain |
 | `s09-shared-image` | [Inferno, Plate 9 (Canto III: Charon)](https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_Dante_Alighieri_-_Inferno_-_Plate_9_(Canto_III_-_Charon).jpg) | Gustave Doré (1832–1883) | Public domain |
 
-The engraving was resized and shown in SheetDelver as a GM-shared image for
-the capture.
+The engravings were trimmed, resized and shown in SheetDelver: Plate 9 as a
+GM-shared image, Plate 2 as the test world's background (replacing the
+Shadowdark system's bundled artwork, which is not licensed for this site).
