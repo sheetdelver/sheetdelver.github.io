@@ -23,5 +23,6 @@ cropping, resizing and format conversion.
 | `s07-dice` (`.webm`, `.mp4`, `-poster.webp`) | S07 | 3D dice from the Dice Tray (d20, d8, 2d6), 4 s loop, 800×600 crop at 1× |
 | `s08-chat` | S08 | Game chat over a sheet, desktop, 4:3 crop |
 | `s09-shared-image` | S09 | GM-shared image over a sheet, desktop, 4:3 crop; public-domain Doré engraving (see `assets/CREDITS.md`) |
+| `s10-combat` | S10 | Player combat tracker over a sheet during a Foundry combat (Prim's turn, round 1), desktop, 4:3 crop |
 
 Each still ships as AVIF, WebP and a progressive JPEG fallback.
