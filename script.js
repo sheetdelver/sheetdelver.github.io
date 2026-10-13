@@ -121,3 +121,20 @@ async function loadStats() {
 }
 
 loadStats();
+
+// Short product clips: play muted loops only while visible, and keep the
+// poster still for people who prefer reduced motion.
+const clips = document.querySelectorAll('video.shot-video');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (clips.length && 'IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    for (const { target, isIntersecting } of entries) {
+      if (isIntersecting && !reduceMotion.matches) target.play().catch(() => {});
+      else target.pause();
+    }
+  }, { threshold: 0.4 });
+  clips.forEach((clip) => observer.observe(clip));
+  reduceMotion.addEventListener('change', () => {
+    if (reduceMotion.matches) clips.forEach((clip) => clip.pause());
+  });
+}

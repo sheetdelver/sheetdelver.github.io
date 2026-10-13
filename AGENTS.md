@@ -108,6 +108,9 @@ a running SheetDelver, its modules or Foundry.
 - Captures must not show hostnames, user names, tokens or credentials.
   Stage the environment so nothing needs redacting, rather than painting
   over images. Never write credentials into files or reports.
+- Append SheetDelver defects or rough edges seen while staging or capturing
+  to the git-ignored `observed-issues.md` at the repository root, so the user
+  can address them later. Do not fix the application from this repository.
 
 ## Shell
 

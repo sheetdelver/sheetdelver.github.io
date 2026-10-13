@@ -134,6 +134,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .shot { position: relative; margin: 0; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
 .shot picture { display: block; height: 100%; }
 .shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.shot video { display: block; width: 100%; height: 100%; object-fit: cover; }
 .shot-desktop { aspect-ratio: 16 / 10; border-radius: 10px; box-shadow: 0 24px 60px var(--shadow); }
 .shot-phone { aspect-ratio: 390 / 844; border: 7px solid #05080b; border-radius: 30px; box-shadow: 0 0 0 1px var(--line), 0 24px 50px var(--shadow); }
 .shot-tile { aspect-ratio: 4 / 3; border-radius: 8px; }

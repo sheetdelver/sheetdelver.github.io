@@ -19,3 +19,6 @@ under the original license.
 
 Placeholders `s01`, `s03`, `s05` and `s06` are crops of earlier SheetDelver
 screenshots (v0.6.5) and are replaced by current captures.
+
+Replaced on the page by captures in `assets/shots/` (files kept until the
+cleanup checkpoint): `s01`, `s02`, `s03`, `s07`, `s08`.

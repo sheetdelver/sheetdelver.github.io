@@ -23,3 +23,6 @@
 - Cached GitHub release data
 - Added structured site data
 - Trimmed unused font weights
+- Added Shadowdark product screenshots
+- Added 3D dice clip
+- Described both Shadowdark sheet views
