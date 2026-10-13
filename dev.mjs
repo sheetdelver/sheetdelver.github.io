@@ -28,7 +28,7 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
 }
 
 let reloadTimer;
-for (const directory of [root, join(root, 'assets'), join(root, 'assets', 'placeholders'), join(root, 'assets', 'shots')]) {
+for (const directory of [root, join(root, 'assets'), join(root, 'assets', 'shots')]) {
   watch(directory, (_event, filename) => {
     if (!filename || !/\.(html|css|js|png|svg|jpg|webp|avif|mp4|webm)$/i.test(filename)) return;
     clearTimeout(reloadTimer);
