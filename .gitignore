@@ -1,0 +1,8 @@
+# Local agent context (handoff, notes, tools); never published.
+.resources/
+
+# Local planning documents; tracked change history lives in docs/.
+planning/
+
+# Untracked notes on SheetDelver app issues seen during captures.
+observed-issues.md

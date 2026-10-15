@@ -1,0 +1,42 @@
+# Website Changes
+
+## 2026-10-15 — site refresh
+
+- Added agent working agreement
+- Added site changelog
+- Consolidated site stylesheet
+- Raised minimum text sizes
+- Improved secondary text contrast
+- Enlarged link touch targets
+- Followed system color scheme
+- Fixed phone layout overflow
+- Fixed phone releases grid
+- Added compact navigation menu
+- Made FAQ answers collapsible
+- Added "At the table" section
+- Added "For the GM" section
+- Paired desktop and phone views
+- Added Creative Commons placeholders
+- Added image credits
+- Added hosting and world FAQs
+- Noted production start command
+- Cached GitHub release data
+- Added structured site data
+- Trimmed unused font weights
+- Added Shadowdark product screenshots
+- Added 3D dice clip
+- Added shared image screenshot
+- Added combat tracker screenshot
+- Added GM tool screenshots
+- Replaced dashboard background artwork
+- Added Mörk Borg screenshots
+- Credited Scvmbirther in Mörk Borg copy
+- Added D&D 5e screenshot
+- Added social preview card
+- Removed placeholder images
+- Described both Shadowdark sheet views
+- Recaptured screenshots for 0.18.0
+- Showed player turn controls
+- Noted player-rolled initiative
+- Recaptured screenshots for 0.18.1
+- Showed shared image caption
