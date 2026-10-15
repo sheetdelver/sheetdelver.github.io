@@ -35,3 +35,6 @@
 - Added social preview card
 - Removed placeholder images
 - Described both Shadowdark sheet views
+- Recaptured screenshots for 0.18.0
+- Showed player turn controls
+- Noted player-rolled initiative
