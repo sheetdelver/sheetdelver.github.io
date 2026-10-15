@@ -38,3 +38,5 @@
 - Recaptured screenshots for 0.18.0
 - Showed player turn controls
 - Noted player-rolled initiative
+- Recaptured screenshots for 0.18.1
+- Showed shared image caption
