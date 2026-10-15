@@ -1,6 +1,6 @@
 # Website Changes
 
-## Unreleased — site refresh
+## 2026-10-15 — site refresh
 
 - Added agent working agreement
 - Added site changelog
