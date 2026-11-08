@@ -64,7 +64,8 @@ createServer(async (request, response) => {
     return;
   }
 
-  const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
+  // Serve a folder's index.html for trailing-slash URLs, as GitHub Pages does.
+  const relativePath = `${pathname.replace(/^\/+/, '')}${pathname.endsWith('/') ? 'index.html' : ''}`;
   if (relativePath.split('/').some((part) => part.startsWith('.'))) {
     response.writeHead(403).end();
     return;

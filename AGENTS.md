@@ -49,8 +49,10 @@ a running SheetDelver, its modules or Foundry.
 
 ## Site Conventions
 
-- No build step: hand-written `index.html`, CSS and `script.js`. Keep it that
-  way unless the user approves otherwise. Do not add dependencies to
+- No build step: hand-written HTML pages (`index.html`, `shadowdark/index.html`),
+  one stylesheet (`site.css`) and `script.js`. Pages share the header, footer
+  and stylesheet; keep them in step when one changes. Keep it that way unless
+  the user approves otherwise. Do not add dependencies to
   `package.json` for testing or tooling.
 - Preview locally with `npm run dev` (`dev.mjs`, `127.0.0.1:4173`, live
   reload). Its SSE reload stream keeps the network busy, so browser

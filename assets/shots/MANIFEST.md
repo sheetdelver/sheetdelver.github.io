@@ -6,7 +6,9 @@ cropping, resizing and format conversion.
 
 Common to all sets: Foundry VTT 14.367, Chromium headless at device scale
 factor 2 unless noted, dark app theme. Character portraits, monster icons
-and item icons are Foundry's core defaults; no game-system artwork appears.
+and item icons are Foundry's core defaults and no game-system artwork
+appears, except the community monster portraits in S21 and S22 (see
+`assets/CREDITS.md`).
 Each still ships as AVIF, WebP and a progressive JPEG fallback.
 
 ## Shadowdark — 2026-11-08 (Core 0.22.3)
@@ -25,6 +27,10 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 - A tokenless Combat Manager encounter ("Gatehouse Ambush", 7 participants)
   run by an Assistant GM; it was set inactive for the non-combat shots so
   the combat bar stays out of them
+- S21/S22 show monster portraits from the Shadowdark Community Tokens module
+  (mostly AI-generated, used with its creators' consent). The browser was
+  filtered to chaotic monsters of levels 1–4 so neither the Aboleth (artist
+  permission required) nor the system's cowled token appears
 - The Treasure & Items tool needs a Gamemaster: the test GM was promoted for
   that capture only, and the item was previewed but not saved
 - Admin capture used the default module host allowlist and the dark admin
@@ -45,7 +51,11 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 | `s15-sd-creator` | S15 | Character Creator step 4 (languages, spell choices by level and tier) with the step bar, 1440×1400, natural ratio 1200×907 |
 | `s16-sd-levelup-phone` | S16 | Level-up dialog, level 1 → 2 (HP roll, spell to learn), phone |
 | `s17-sd-rest-phone` | S17 | Rest dialog (ration, HP and a lost spell recovering), phone |
-| `s18-sd-treasure` | S18 | GM Treasure & Items, Weapons tab (longsword, +1, weapon feature), 1440×1300, natural ratio 1200×866 |
+| `s18-sd-treasure` | S18 | GM Treasure & Items, Weapons tab (longsword base, +1), 1440×1300 frame, 16:10 crop ending above the weapon feature |
+| `s19-sd-card-weapon-phone` | S19 | Prim's longsword card (stats, Unequip, Stash, Share to chat, Attack), phone |
+| `s20-sd-card-spell-phone` | S20 | Tamsin's Cure Wounds spell card (Share to chat, Cast, Mark lost), phone, opened by the Assistant GM |
+| `s21-sd-monsters` | S21 | GM Monster Stats browser, Monsters source, levels 1–4, chaotic, desktop 16:10 |
+| `s22-sd-monster-card` | S22 | Bugbear stat card over the browser, desktop 16:10 |
 
 ## Shadowdark — 2026-10-13 (Core 0.17.0)
 

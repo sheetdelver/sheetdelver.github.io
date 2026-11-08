@@ -120,7 +120,8 @@ async function loadStats() {
   source.textContent = `Published releases from GitHub${partial}`;
 }
 
-loadStats();
+// Only pages with the releases band load GitHub data.
+if (source) loadStats();
 
 // Short product clips: play muted loops only while visible, and keep the
 // poster still for people who prefer reduced motion.

@@ -200,7 +200,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .sd-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .36fr); align-items: start; gap: 48px; }
 .sd-row-reverse { grid-template-columns: minmax(0, .36fr) minmax(0, 1fr); }
 .shot-creator { aspect-ratio: 1200 / 907; }
-.shot-treasure { aspect-ratio: 1200 / 866; }
+.sd-more { margin: 56px 0 0; }
+.sd-phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; }
+.sd-phones .shot-phone { width: min(100%, 300px); }
+.sd-requirements h2 { margin: 0 0 18px; font: 600 40px/1.05 "Space Grotesk", sans-serif; letter-spacing: -.05em; }
+.sd-requirements p { max-width: 720px; margin: 0 0 18px; color: var(--muted); font-size: var(--fs-body); line-height: 1.7; }
+.sd-links { display: flex; flex-wrap: wrap; gap: 12px 32px; }
+.sd-links a { display: inline-flex; min-height: 24px; align-items: center; padding-bottom: 2px; border-bottom: 1px solid var(--accent); color: var(--text); font-size: var(--fs-small); font-weight: 700; }
+.sd-links a:hover { color: var(--accent); }
+.sd-requirements .sd-license { margin-top: 32px; color: var(--subtle); font-size: var(--fs-small); }
 
 /* Systems */
 .systems-section { border-top: 1px solid var(--line); background: var(--bg-alt); }
@@ -335,6 +343,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .sd-item-phone { display: grid; grid-template-columns: minmax(0, 220px) minmax(0, 1fr); grid-template-rows: auto 1fr; column-gap: 36px; }
   .sd-item-phone .shot { grid-row: 1 / 3; }
   .sd-item-phone h3 { margin-top: 0; }
+  .sd-phones { gap: 32px; }
 }
 @media (max-width: 850px) {
   .wrap { width: min(100% - 44px, 700px); }
@@ -355,6 +364,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .sd-item-phone .shot { width: min(240px, 64%); margin-inline: auto; }
   .sd-item-phone h3 { margin-top: 20px; }
   .sd-item h3 { margin-top: 20px; font-size: 24px; }
+  .sd-phones { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .sd-phones .shot-phone { width: min(240px, 64%); margin-inline: auto; }
   .stats-inner { gap: 32px; padding-block: 52px; }
   .stats-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stats-list .stat { padding-inline: 12px; }

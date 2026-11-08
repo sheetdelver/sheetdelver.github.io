@@ -12,6 +12,10 @@
 - Rebuilt social card
 - Showed one character per player
 - Clarified character creation tools
+- Added Shadowdark page
+- Added item and spell cards
+- Added monster browser and stat cards
+- Shortened home Shadowdark section
 
 ## 2026-10-15 — site refresh
 
