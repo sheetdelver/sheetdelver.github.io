@@ -1,5 +1,12 @@
 # Website Changes
 
+## 2026-11-08 — Shadowdark 1.0
+
+- Refreshed screenshots for Core 0.22.3
+- Replaced system token art
+- Noted Mörk Borg needs Foundry 14
+- Rebuilt social card
+
 ## 2026-10-15 — site refresh
 
 - Added agent working agreement
