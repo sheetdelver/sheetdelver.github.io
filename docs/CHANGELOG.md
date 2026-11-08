@@ -2,6 +2,10 @@
 
 ## 2026-11-08 — Shadowdark 1.0
 
+- Added Shadowdark 1.0 section
+- Added Character Creator screenshot
+- Added level-up and rest screenshots
+- Added treasure builder screenshot
 - Refreshed screenshots for Core 0.22.3
 - Replaced system token art
 - Noted Mörk Borg needs Foundry 14

@@ -23,6 +23,8 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 - A tokenless Combat Manager encounter ("Gatehouse Ambush", 7 participants)
   run by an Assistant GM; it was set inactive for the non-combat shots so
   the combat bar stays out of them
+- The Treasure & Items tool needs a Gamemaster: the test GM was promoted for
+  that capture only, and the item was previewed but not saved
 - Admin capture used the default module host allowlist and the dark admin
   theme
 - Desktop 1440×900, phone 390×844 unless noted
@@ -38,6 +40,10 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 | `s10-combat` | S10 | Player combat bar with the turn order open over a sheet during the Combat Manager encounter (Prim's turn, round 1), 1200×900 viewport |
 | `s11-gm-combat` | S11 | Combat Manager: encounter controls, participant picker and initiative order (HP/AC stat display), desktop, full 16:10 frame |
 | `s12-gm-modules` | S12 | Admin → Modules → Available with the Shadowdark 1.0.0 release review open, desktop 16:10 |
+| `s15-sd-creator` | S15 | Character Creator step 4 (languages, spell choices by level and tier) with the step bar, 1440×1400, natural ratio 1200×907 |
+| `s16-sd-levelup-phone` | S16 | Level-up dialog, level 1 → 2 (HP roll, spell to learn), phone |
+| `s17-sd-rest-phone` | S17 | Rest dialog (ration, HP and a lost spell recovering), phone |
+| `s18-sd-treasure` | S18 | GM Treasure & Items, Weapons tab (longsword, +1, weapon feature), 1440×1300, natural ratio 1200×866 |
 
 ## Shadowdark — 2026-10-13 (Core 0.17.0)
 
