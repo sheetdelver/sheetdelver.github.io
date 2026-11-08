@@ -10,6 +10,8 @@
 - Replaced system token art
 - Noted Mörk Borg needs Foundry 14
 - Rebuilt social card
+- Showed one character per player
+- Clarified character creation tools
 
 ## 2026-10-15 — site refresh
 

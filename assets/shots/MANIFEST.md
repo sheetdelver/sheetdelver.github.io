@@ -20,6 +20,8 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
   artwork appears
 - The staged monsters' token art (system and community tokens) was replaced
   with Foundry core icons before capturing
+- One character per player: the test player owns only Prim, and the other
+  characters belong to disposable players (dashboard and combat shots)
 - A tokenless Combat Manager encounter ("Gatehouse Ambush", 7 participants)
   run by an Assistant GM; it was set inactive for the non-combat shots so
   the combat bar stays out of them
@@ -31,13 +33,13 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 
 | File | Slot | Source view |
 |---|---|---|
-| `s01-dashboard-desktop` | S01 | Player dashboard, 1440×1060, cropped below the connection header |
+| `s01-dashboard-desktop` | S01 | Player dashboard (one character), 1440×1060, cropped below the connection header |
 | `s02-sheet-phone` | S02 | Shadowdark single-page sheet, phone |
 | `s03-shadowdark-desktop` | S03 | Shadowdark single-page sheet, desktop |
 | `s04-shadowdark-manage-phone` | S04 | Shadowdark tabbed view, Spells tab, phone (the priest) |
 | `s08-chat` | S08 | Game chat over a sheet, desktop, 4:3 crop; rolls attributed to the character |
 | `s09-shared-image` | S09 | GM-shared image with its caption over a sheet, desktop, 4:3 crop around the panel; public-domain Doré engraving (see `assets/CREDITS.md`) |
-| `s10-combat` | S10 | Player combat bar with the turn order open over a sheet during the Combat Manager encounter (Prim's turn, round 1), 1200×900 viewport |
+| `s10-combat` | S10 | Player combat bar with the turn order open over a sheet during the Combat Manager encounter (Prim's turn, round 1; only the player's own character shows stats), 1200×900 viewport |
 | `s11-gm-combat` | S11 | Combat Manager: encounter controls, participant picker and initiative order (HP/AC stat display), desktop, full 16:10 frame |
 | `s12-gm-modules` | S12 | Admin → Modules → Available with the Shadowdark 1.0.0 release review open, desktop 16:10 |
 | `s15-sd-creator` | S15 | Character Creator step 4 (languages, spell choices by level and tier) with the step bar, 1440×1400, natural ratio 1200×907 |
