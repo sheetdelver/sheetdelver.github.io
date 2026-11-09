@@ -52,11 +52,19 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 | `s16-sd-levelup-phone` | S16 | Level-up dialog, level 1 → 2 (HP roll, spell to learn), phone |
 | `s17-sd-rest-phone` | S17 | Rest dialog (ration, HP and a lost spell recovering), phone |
 | `s18-sd-treasure` | S18 | GM Treasure & Items, Weapons tab (longsword base, +1), 1440×1300 frame, 16:10 crop ending above the weapon feature |
-| `s19-sd-card-weapon-phone` | S19 | Prim's longsword card (stats, Unequip, Stash, Share to chat, Attack), phone |
 | `s20-sd-card-spell-phone` | S20 | Tamsin's Cure Wounds spell card (Share to chat, Cast, Mark lost), phone, opened by the Assistant GM |
 | `s21-sd-monsters` | S21 | GM Monster Stats browser, Monsters source, levels 1–4, chaotic, desktop 16:10 |
 | `s22-sd-monster-card` | S22 | Bugbear stat card over the browser, desktop 16:10 |
 | `s23-sd-tabbed-desktop` | S23 | Shadowdark tabbed view, Inventory tab (Prim), desktop full 16:10 frame |
+
+## Shadowdark — 2026-11-08 (Shadowdark 1.0.2)
+
+Same world, Core 0.22.3 with Shadowdark module 1.0.2. Retaken because 1.0.1
+relabelled the weapon card's attack row (previously a second "Type").
+
+| File | Slot | Source view |
+|---|---|---|
+| `s19-sd-card-weapon-phone` | S19 | Prim's longsword card (Type, Attack, damage, quantity, slots, cost; Unequip, Stash, Share to chat, Attack), phone, combat bar hidden |
 
 ## Shadowdark — 2026-10-13 (Core 0.17.0)
 
@@ -77,8 +85,16 @@ presentation did not change.
 
 | File | Slot | Source view |
 |---|---|---|
-| `s05-morkborg-phone` | S05 | Mörk Borg sheet, phone (414×896, same aspect as 390×844), first screen with the section bar |
 | `s06-morkborg-desktop` | S06 | Mörk Borg sheet, desktop, character card and initiative, 16:10 crop |
+
+## Mörk Borg — 2026-11-08 (Mörk Borg 1.0.3)
+
+Same scvm and core icons, Core 0.22.3 with Mörk Borg module 1.0.3, which
+fixed the character name breaking mid-word on narrow phones.
+
+| File | Slot | Source view |
+|---|---|---|
+| `s05-morkborg-phone` | S05 | Mörk Borg sheet, phone, first screen with the section bar |
 
 ## D&D 5e (experimental) — 2026-10-15 (Core 0.18.0)
 

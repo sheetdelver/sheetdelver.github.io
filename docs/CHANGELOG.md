@@ -17,6 +17,7 @@
 - Noted reviewed module upgrades
 - Linked module GM tools
 - Rebuilt social card
+- Retook shots after module patches
 
 ## 2026-10-15 — site refresh
 
