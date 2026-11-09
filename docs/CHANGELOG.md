@@ -16,6 +16,7 @@
 - Added item and spell cards
 - Added monster browser and stat cards
 - Shortened home Shadowdark section
+- Showed both sheet views
 
 ## 2026-10-15 — site refresh
 

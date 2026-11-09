@@ -56,6 +56,7 @@ Each still ships as AVIF, WebP and a progressive JPEG fallback.
 | `s20-sd-card-spell-phone` | S20 | Tamsin's Cure Wounds spell card (Share to chat, Cast, Mark lost), phone, opened by the Assistant GM |
 | `s21-sd-monsters` | S21 | GM Monster Stats browser, Monsters source, levels 1–4, chaotic, desktop 16:10 |
 | `s22-sd-monster-card` | S22 | Bugbear stat card over the browser, desktop 16:10 |
+| `s23-sd-tabbed-desktop` | S23 | Shadowdark tabbed view, Inventory tab (Prim), desktop full 16:10 frame |
 
 ## Shadowdark — 2026-10-13 (Core 0.17.0)
 
