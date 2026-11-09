@@ -2,21 +2,18 @@
 
 ## 2026-11-08 — Shadowdark 1.0
 
-- Added Shadowdark 1.0 section
-- Added Character Creator screenshot
-- Added level-up and rest screenshots
+- Added Shadowdark page
+- Showed both sheet views
+- Added character creation screenshots
+- Added item and spell cards
+- Added monster browser and stat cards
 - Added treasure builder screenshot
+- Linked Shadowdark from Systems
 - Refreshed screenshots for Core 0.22.3
+- Showed one character per player
 - Replaced system token art
 - Noted Mörk Borg needs Foundry 14
 - Rebuilt social card
-- Showed one character per player
-- Clarified character creation tools
-- Added Shadowdark page
-- Added item and spell cards
-- Added monster browser and stat cards
-- Shortened home Shadowdark section
-- Showed both sheet views
 
 ## 2026-10-15 — site refresh
 

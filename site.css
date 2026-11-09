@@ -200,7 +200,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .sd-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .36fr); align-items: start; gap: 48px; }
 .sd-row-reverse { grid-template-columns: minmax(0, .36fr) minmax(0, 1fr); }
 .shot-creator { aspect-ratio: 1200 / 907; }
-.sd-more { margin: 56px 0 0; }
 .sd-phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; }
 .sd-phones .shot-phone { width: min(100%, 300px); }
 .sd-requirements h2 { margin: 0 0 18px; font: 600 40px/1.05 "Space Grotesk", sans-serif; letter-spacing: -.05em; }
@@ -224,6 +223,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .system-copy p a:hover { color: var(--accent); }
 .system-copy>a { padding-bottom: 4px; border-bottom: 1px solid var(--accent); color: var(--text); font-size: var(--fs-small); font-weight: 700; }
 .system-copy>a:hover { color: var(--accent); }
+.system-copy>a+a { margin-top: 14px; }
 .system-experimental {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr) auto;
