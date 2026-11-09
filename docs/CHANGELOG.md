@@ -13,6 +13,9 @@
 - Showed one character per player
 - Replaced system token art
 - Noted Mörk Borg needs Foundry 14
+- Noted Gamemaster service account
+- Noted reviewed module upgrades
+- Linked module GM tools
 - Rebuilt social card
 
 ## 2026-10-15 — site refresh
