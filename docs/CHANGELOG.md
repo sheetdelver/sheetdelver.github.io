@@ -1,5 +1,24 @@
 # Website Changes
 
+## 2026-11-08 — Shadowdark 1.0
+
+- Added Shadowdark page
+- Showed both sheet views
+- Added character creation screenshots
+- Added item and spell cards
+- Added monster browser and stat cards
+- Added treasure builder screenshot
+- Linked Shadowdark from Systems
+- Refreshed screenshots for Core 0.22.3
+- Showed one character per player
+- Replaced system token art
+- Noted Mörk Borg needs Foundry 14
+- Noted Gamemaster service account
+- Noted reviewed module upgrades
+- Linked module GM tools
+- Rebuilt social card
+- Retook shots after module patches
+
 ## 2026-10-15 — site refresh
 
 - Added agent working agreement
